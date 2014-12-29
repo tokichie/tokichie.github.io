@@ -35,12 +35,14 @@ singletonのsの字も知らなかった頃に書いたウ●コード
 ``` java TokenStore.java
 public class TokenStore {
   private static TokenStore tokenStore = new TokenStore();
-  private static String token;
+  private static String mToken;
   public static void setToken(String token) {
-    this.token = token;
+    mToken = token;
   }
   public static String getToken() { return token; }
 }
 ```
 そもそもインスタンスなんていらなくね？という発想で全部`static`になっているがコンストラクタは`public`なのでつくろうと思えばいくらでもインスタンスが作れてしまう。カッコ悪い。
+さらにいうとスタティックフィールドに`mXXX`と命名しているのでツッコミどころ満載である。
+
 
