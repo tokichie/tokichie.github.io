@@ -11,11 +11,11 @@
 		{{ content | excerpt }}
 		{% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
 		{% if excerpted == 'true' %}<a href="{{ root_url }}{{ post.url }}" class="more-link">{{ site.excerpt_link }}</a>{% endif %}
-	</div>
 {% else %}
 	<h2 class="title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h2>
-	<div class="entry-content">{{ content }}</div>
+	<div class="entry-content">{{ content }}
 {% endif %}
+	</div>
 
 <div class="meta">
 	<div class="date">{% include post/date.html %}{{ time }}</div>
