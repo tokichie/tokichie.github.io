@@ -74,4 +74,5 @@ otakuCard.createNewYearCard();
 ```
 
 ※イメージ  
+![通常年賀状](/images/post/jp15t_et_0001.png)  
 ![オタク年賀状](/images/post/jp15t_px_0003.png)
